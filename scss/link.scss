@@ -1,0 +1,64 @@
+@import "Ginkgo";
+
+$main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
+$se_color: rgba(215, 101, 176, 1.00);  // 粉色
+
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+
+.btn01 {
+  padding: 10px 30px;
+  font-size: 1.23rem;
+  color: $main_color;
+  border: 1px solid $main_color;
+  @include border-radius(15px);
+  @include transition(all .3s);
+
+  &:hover {
+    color: white;
+    background-color: $main_color;
+  }
+}
+
+
+.menu {
+  display: inline-block;
+  font-size: 1.38rem;
+  color: rgba(45, 45, 45, 1.00);
+  font-weight: bold;
+  text-align: center;
+  padding-right: 40px;
+  @include transition(all .3s);
+
+  &:after {
+    display: block;
+    content: attr(title);
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: $se_color;
+  }
+}
+
+
+
+
+
+
+
+

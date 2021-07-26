@@ -1,0 +1,83 @@
+@import "Ginkgo";
+
+$main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
+$se_color: rgba(215, 101, 176, 1.00);  // 粉色
+$black50: rgba(45, 45, 45, .5);  // 淺灰色50
+$black80: rgba(45, 45, 45, .8);  // 淺灰色80
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.lineH30 {
+  line-height: 2.3rem;
+}
+
+.taL {
+  text-align: left;
+}
+
+
+// 16pt
+.tag50 {
+  display: inline-block;
+  width: 100%;
+  color: $black50;
+  font-size: 1.23rem;
+}
+
+.tag80 {
+  display: inline-block;
+  width: 100%;
+  color: $black80;
+  font-size: 1.23rem;
+}
+
+.tagPink {
+  display: inline-block;
+  width: 100%;
+  color: $se_color;
+  font-size: 1.23rem;
+}
+
+
+// 18pt
+.text18 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.38rem;
+}
+
+// 20pt
+.text20_80 {
+  display: inline-block;
+  width: 100%;
+  color: $black80;
+  font-size: 1.53rem;
+}
+
+// 36pt
+.text36 {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+// 50pt
+.titleEnglish {
+  display: inline-block;
+  width: 100%;
+  font-size: 3.84rem;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+
+
+
+
+
+

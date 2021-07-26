@@ -1,0 +1,21 @@
+*, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
+
+p { padding: 0; margin: 0; }
+
+.lineH30 { line-height: 2.3rem; }
+
+.taL { text-align: left; }
+
+.tag50 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.5); font-size: 1.23rem; }
+
+.tag80 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.8); font-size: 1.23rem; }
+
+.tagPink { display: inline-block; width: 100%; color: #d765b0; font-size: 1.23rem; }
+
+.text18 { display: inline-block; width: 100%; font-size: 1.38rem; }
+
+.text20_80 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.8); font-size: 1.53rem; }
+
+.text36 { display: inline-block; width: 100%; font-size: 2.5rem; font-weight: bold; padding-bottom: 20px; }
+
+.titleEnglish { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; padding: 25px 0; }
