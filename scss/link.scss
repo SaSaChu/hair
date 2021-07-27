@@ -2,6 +2,9 @@
 
 $main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
 $se_color: rgba(215, 101, 176, 1.00);  // 粉色
+$black50: rgba(45, 45, 45, .5);  // 淺灰色50
+$black80: rgba(45, 45, 45, .8);  // 淺灰色80
+$white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 
 a {
@@ -34,6 +37,25 @@ button {
   }
 }
 
+.btn02 {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 0;
+  font-size: 1.38rem;
+  color: white;
+  border: 1px solid $main_color;
+  background-color: $main_color;
+  @include border-radius(15px);
+  @include transition(all .3s);
+
+  &:hover {
+    color: white;
+    background-color: $se_color;
+    border: 1px solid $se_color;
+  }
+}
+
 
 .menu {
   display: inline-block;
@@ -55,9 +77,59 @@ button {
   }
 }
 
+.socieBtn {
+  display: inline-block;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  @include border-radius(50px);
+  background-color: $main_color;
+  @include transition(all .3s);
+  margin-left: 10px;
+  float: left;
 
+  &:hover {
+    background-color: $se_color;
+  }
+}
 
+.footerA {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 1.23rem;
+  text-align: left;
+  @include transition(all .3s);
+  line-height: 1.5;
+  
+  &:hover {
+    color: $se_color;
+  }
 
+  @include range-width(0, 450px) {
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+.m_menuA {
+  display: inline-block;
+  width: 80%;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: $black80;
+  font-size: 1.53rem;
+  font-weight: bold;
+  @include transition(all .3s);
+  text-align: left;
+  
+  &:hover {
+    color: $se_color;
+  }
+}
 
 
 

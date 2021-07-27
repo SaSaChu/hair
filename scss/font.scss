@@ -4,6 +4,7 @@ $main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
 $se_color: rgba(215, 101, 176, 1.00);  // 粉色
 $black50: rgba(45, 45, 45, .5);  // 淺灰色50
 $black80: rgba(45, 45, 45, .8);  // 淺灰色80
+$white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 p {
   padding: 0;
@@ -18,13 +19,44 @@ p {
   text-align: left;
 }
 
+// 13pt
+.copytext {
+  display: inline-block;
+  width: 100%;
+  color: $white50;
+  font-size: 1rem;
+  border-top: 1px solid $white50;
+  padding: 20px 0;
+}
+
 
 // 16pt
+.footer_menu {
+  display: inline-block;
+  width: 100%;
+  color: $white50;
+  font-size: 1.23rem;
+  padding-bottom: 20px;
+  text-align: left;
+
+  @include range-width(0, 450px) {
+    text-align: center;
+  }
+}
+
+.white50 {
+  display: inline-block;
+  width: 100%;
+  color: $white50;
+  font-size: 1.23rem;
+}
+
 .tag50 {
   display: inline-block;
   width: 100%;
   color: $black50;
   font-size: 1.23rem;
+  line-height: 1.5;
 }
 
 .tag80 {
@@ -47,7 +79,16 @@ p {
   display: inline-block;
   width: 100%;
   font-size: 1.38rem;
+  line-height: 1.5;
 }
+
+.text18_w {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.38rem;
+  color: white;
+}
+
 
 // 20pt
 .text20_80 {
@@ -66,6 +107,7 @@ p {
   padding-bottom: 20px;
 }
 
+
 // 50pt
 .titleEnglish {
   display: inline-block;
@@ -73,6 +115,19 @@ p {
   font-size: 3.84rem;
   font-weight: bold;
   padding: 25px 0;
+}
+
+.titleWhite {
+  display: inline-block;
+  width: 100%;
+  font-size: 3.84rem;
+  font-weight: bold;
+  color: white;
+
+  @include range-width(0, 450px) {
+    font-size: 2.1rem;
+    padding-bottom: 30px;
+  }
 }
 
 

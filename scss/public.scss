@@ -25,6 +25,10 @@ header {
   width: 100%;
   padding: 0 30px;
 
+  @include range-width(0, 450px) {
+    padding: 15px;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,22 +41,35 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e1f2', endColorstr='#eee0f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+footer {
+  display: inline-block;
+  width: 100%;
+  background-color: #292a3b;
+
+  @include range-width(0, 450px) {
+    padding: 0 15px;
+  }
+}
+
 .header_L_Boxs {
   display: inline-block;
   float: left;
   text-align: left;
-
-  // d
   width: 30%;
+  @include range-width(0, 450px) {
+    width: 70%;
+  }
 }
 
 .header_R_Boxs {
   display: inline-block;
   float: right;
   text-align: right;
-
-  // d
   width: 70%;
+
+  @include range-width(0, 450px) {
+    width: 30%;
+  }
 }
 
 
@@ -74,19 +91,57 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   @include clearfix();
+
+  &.aspTD20 {
+    padding: 20px 0; 
+  }
+
+  &.aspTD30 {
+    padding: 30px 0; 
+  }
+
+  &.aspTD80 {
+    padding: 80px 0; 
+
+    @include range-width(0, 450px) {
+      padding: 20px 15px; 
+    }
+  }
 }
+
+
+.ds {
+  display: inline-block;
+  text-align: center;
+}
+
 
 .fullBoxs {
   display: inline-block;
   width: 100%;
 
-  // d
-  height: 800px;
-
   &.pic01 {
     background: url(../image/grap01.svg)  650px -144px no-repeat;
     -moz-background-size: unset;
     background-size: unset;
+  }
+
+  &.spaceAll50 {
+    padding: 50px;
+
+    @include range-width(0, 450px) {
+      padding: 25px;
+    }
+  }
+}
+
+.boxs25 {
+  display: inline-block;
+  width: 25%;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
   }
 }
 
@@ -94,14 +149,51 @@ header {
   display: inline-block;
   width: 50%;
   float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+
+  &.pL50 {
+    padding-left: 50px;
+
+    @include range-width(0, 450px) {
+      padding-left: 0;
+    }
+  }
+}
+
+.boxs70 {
+  display: inline-block;
+  width: 70%;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
+}
+
+.boxs30_f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 155px;
+  width: 30%;
+  float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    min-height: auto;
+  }
 }
 
 .gradualBG {
   display: inline-block;
   width: 100%;
 
-  // d
-  height: 800px;
+  @include range-width(0, 450px) {
+    padding: 0 15px;
+  }
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcd6ed+0,c4d1fc+62,f0d5ef+100 */
   background: #fcd6ed; /* Old browsers */
@@ -112,7 +204,28 @@ header {
 }
 
 
+.blackBoxs {
+  width: 100%;
+  max-width: 1200px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 368px;
+  @include border-radius(30px);
+  overflow: hidden;
+  
+  background: #2f3143 url(../image/bookingBg.svg)  top right no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+
+  @include range-width(0, 450px) {
+    min-height: 310px;
+    background: #2f3143 url(../image/m_bookingBg.svg)  top left no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+}
 
 
 
