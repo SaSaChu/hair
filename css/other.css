@@ -5,6 +5,12 @@
 .mob_open { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_open { display: inline-block !important; } }
 
+.imgSetp { display: inline-block; width: 100%; max-width: 355px; }
+
+.imgSetpBoxs { display: inline-block; width: 100%; height: 465px; }
+
+.imgService { display: inline-block; width: 100%; max-width: 365px; height: 240px; }
+
 .imgLogo { display: inline-block; width: 100%; max-width: 285px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .imgLogo { float: left; max-width: 350px; } }
 
@@ -20,6 +26,8 @@
 
 .pTD80 { padding: 80px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pTD80 { padding: 40px 0; } }
+
+.pTD20 { padding: 20px 0; }
 
 .pD20 { padding-bottom: 20px; }
 

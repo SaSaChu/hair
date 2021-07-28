@@ -82,6 +82,16 @@ footer {
   justify-content: center;
   align-items: center;
   height: 320px;
+
+  &.gradual {
+    max-width: none;
+    margin: auto;
+    background: #fcd6ed; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #fcd6ed 0%, #c4d1fc 62%, #f0d5ef 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #fcd6ed 0%,#c4d1fc 62%,#f0d5ef 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #fcd6ed 0%,#c4d1fc 62%,#f0d5ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd6ed', endColorstr='#f0d5ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
 }
 
 
@@ -98,6 +108,11 @@ footer {
 
   &.aspTD30 {
     padding: 30px 0; 
+  }
+
+  // booking
+  &.aspD50 {
+    padding-bottom: 50px;
   }
 
   &.aspTD80 {
@@ -124,6 +139,12 @@ footer {
     background: url(../image/grap01.svg)  650px -144px no-repeat;
     -moz-background-size: unset;
     background-size: unset;
+  }
+
+  &.pic02 {
+    background: url(../image/grap02.svg)  bottom right no-repeat;
+    -moz-background-size: inherit;
+    background-size: inherit;
   }
 
   &.spaceAll50 {
@@ -203,6 +224,16 @@ footer {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd6ed', endColorstr='#f0d5ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.whiteBG {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+
+  @include range-width(0, 450px) {
+    padding: 0 15px;
+  }
+}
+
 
 .blackBoxs {
   width: 100%;
@@ -227,11 +258,87 @@ footer {
   }
 }
 
+.stepBoxs {
+  display: inline-block;
+  width: calc(100% / 3 - 50px * 2 / 3);
+  float: left;
+  @include border-radius(15px);
+  overflow: hidden;
+  
+
+  &:nth-child(3n+2) {
+    margin: 0 50px;
+  }
+}
+
+.serviceBoxs {
+  display: inline-block;
+  width: calc(100% / 3 - 50px * 2 / 3);
+  float: left;
+  @include border-radius(15px);
+  overflow: hidden;
+
+  height: 450px;
+  background-color: white;
 
 
+  &:nth-child(3n+2) {
+    margin: 0 50px;
+  }
+
+  &:nth-child(3n+3) {
+    margin-bottom: 50px;
+  }
+}
 
 
+.serviceTypeBoxs {
+  display: inline-block;
+  width: 100%;
+  padding: 30px;
+}
 
+
+.fanBoxs {
+  display: inline-block;
+  width: calc(100% / 3 - 50px * 2 / 3);
+  float: left;
+
+  &:nth-child(3n+2) {
+    margin: 0 50px;
+  }
+
+  &:nth-child(3n+3) {
+    margin-bottom: 50px;
+  }
+}
+
+.fanImgBoxs {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(15px);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  
+  .fanDay {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    @include border-radius(15px);
+    padding: 5px 10px;
+    color: white;
+    font-size: 1.1rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */
+    background: #f6add9; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  }
+}
 
 
 

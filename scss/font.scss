@@ -15,6 +15,10 @@ p {
   line-height: 2.3rem;
 }
 
+.lineH50 {
+  line-height: 3.8rem;
+}
+
 .taL {
   text-align: left;
 }
@@ -51,6 +55,16 @@ p {
   font-size: 1.23rem;
 }
 
+.fan16 {
+  display: inline-block;
+  width: 100%;
+  color: $black50;
+  font-size: 1.23rem;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
 .tag50 {
   display: inline-block;
   width: 100%;
@@ -64,6 +78,12 @@ p {
   width: 100%;
   color: $black80;
   font-size: 1.23rem;
+
+  &.stepuse {
+    line-height: 1.5;
+    padding: 20px 0;
+    min-height: 90px;
+  }
 }
 
 .tagPink {
@@ -96,6 +116,31 @@ p {
   width: 100%;
   color: $black80;
   font-size: 1.53rem;
+}
+
+
+// service
+.service24 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.service16 {
+  display: inline-block;
+  font-size: 1.23rem;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.service18 {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+  float: right;
 }
 
 // 36pt

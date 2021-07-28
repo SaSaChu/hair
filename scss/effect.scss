@@ -92,6 +92,10 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
       }
     }
 
+    &.tM_noF {
+      float: none;
+    }
+
     &.loi_s {
       color: white;
       background-color: $se_color;

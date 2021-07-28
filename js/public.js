@@ -1,6 +1,7 @@
  
 $(function() {
 
+  // 手機版Menu
   $('.m_header_r').click(function() {
     $('.m_menu').addClass('menu_open');
   });
@@ -9,6 +10,9 @@ $(function() {
     $('.m_menu').removeClass('menu_open');
   });
 
+
+  // 圖片縮放
+  $(".imgSetpBoxs, .imgSerBoxs").imgLiquid ();
 
 
   // tag切換
@@ -24,16 +28,16 @@ $(function() {
 
 
   // 手機版 select
-  // $(".k_sel").change(function () {
-  //     let i = $(this).val();
-  //     $(".qaBoxs").removeClass("qaBoxs_show");
+  $(".k_sel").change(function () {
+      let i = $(this).val();
+      $(".qaBoxs").removeClass("qaBoxs_show");
 
-  //     $(this)
-  //         .parents(".allBoxs")
-  //         .find(".qaBoxs")
-  //         .eq(i)
-  //         .addClass("qaBoxs_show");
-  // });
+      $(this)
+          .parents(".allBoxs")
+          .find(".qaBoxs")
+          .eq(i)
+          .addClass("qaBoxs_show");
+  });
 
 
 

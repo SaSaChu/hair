@@ -131,6 +131,18 @@ button {
   }
 }
 
+.fanLink {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.23rem;
+  text-align: left;
+  @include transition(all .3s);
+  color: black;
+
+  &:hover {
+    color: $se_color;
+  }
+}
 
 
 

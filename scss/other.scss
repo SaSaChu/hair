@@ -13,6 +13,25 @@
   }
 }
 
+.imgSetp {
+  display: inline-block;
+  width: 100%;
+  max-width: 355px;
+}
+
+.imgSetpBoxs {
+  display: inline-block;
+  width: 100%;
+  height: 465px;
+}
+
+.imgService {
+  display: inline-block;
+  width: 100%;
+  max-width: 365px;
+  height: 240px;
+}
+
 
 .imgLogo {
   display: inline-block;
@@ -76,6 +95,11 @@
   @include range-width(0, 450px) {
     padding: 40px 0;
   }
+}
+
+
+.pTD20 {
+  padding: 20px 0;
 }
 
 .pD20 {
