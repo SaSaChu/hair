@@ -115,6 +115,10 @@ p {
   font-size: 3.84rem;
   font-weight: bold;
   padding: 25px 0;
+
+  @include range-width(0, 450px) {
+    font-size: 3rem;
+  }
 }
 
 .titleWhite {

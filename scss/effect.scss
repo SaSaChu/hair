@@ -1,5 +1,13 @@
 @import "Ginkgo";
 
+$main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
+$se_color: rgba(215, 101, 176, 1.00);  // 粉色
+$black50: rgba(45, 45, 45, .5);  // 淺灰色50
+$black80: rgba(45, 45, 45, .8);  // 淺灰色80
+$white50: rgba(255, 255, 255, .5);  // 淺白色50
+
+
+
 // 手機Menu
 .m_header_r {
   display: none;
@@ -54,4 +62,152 @@
 
 
 
+// tag切換・網頁
+.tagBoxs {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 50px;
+  @include clearfix();
+
+  @include range-width(0, 450px) {
+    padding-bottom: 30px;
+  }
+
+  .tagMenu {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.23rem;
+    color: $black50;
+    padding: 10px;
+    float: left;
+    @include transition(all .3s);
+    font-weight: bold;
+    @include border-radius(15px);
+
+    &.tM6 {
+      width: calc(100% / 6);
+
+      @include range-width(0, 450px) {
+        display: none;
+      }
+    }
+
+    &.loi_s {
+      color: white;
+      background-color: $se_color;
+    }
+
+    &:hover {
+      color: white;
+      background-color: $se_color;
+    }
+    
+  }
+}
+.qaBoxs {
+  display: inline-block;
+  width: 100%;
+  // 控制按鈕分頁，設定預設值是沒有顯示
+  display: none;
+
+  &.qaBoxs_show {
+    display: inline-block;
+  } 
+}
+// tag切換・手機
+.w_select_type {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+  
+  width: 100%;
+  float: right;
+  font-size: 1.6rem;
+  padding: 10px;
+  // background-color: $se_color;
+  // border: 1px solid rgba(198, 198, 198, 1.00);
+  // color: black;
+  @include border-radius(5px);
+  border: 0;
+  color: white;
+
+  /*適應safari瀏覽器內容不跑偏*/
+  line-height: 1;
+  /*將預設的select選擇框樣式清除*/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  /*在選擇框的最右側中間顯示小箭頭圖片*/  
+  background: url("../image/arrow.svg") no-repeat $se_color 310px center;
+  background-size: 20px 37px;
+  /*為下拉小箭頭留出一點位置,避免被文字覆蓋*/  
+  padding-right: 14px;
+  /*去除選中時樣式*/
+  outline: none;
+  // margin-top: 5px;
+}
+
+
+
+// 手風琴
+.accordion {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 80px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 40px;
+  }
+
+  .p_page {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    @include transition(height .3s);
+    
+    + .p_page {
+      margin-top: 10px;
+    }
+
+    > span {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 5px;
+      cursor: pointer;
+      font-size: 2rem;
+      line-height: 55px;
+      color: #2d2d2d;
+      font-weight: bold;
+      @include transition(all .3s);
+      
+      &:hover, &:active {
+        // background-color: red;
+      }
+
+      @include range-width(0, 450px) {
+        padding: 10px;
+        font-size: 1.5rem;
+        line-height: 33px;
+      }
+    }
+
+    > div {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 60px;
+      font-size: 1.38rem;
+      color: #2d2d2d;
+      line-height: 2;
+      // font-weight: 300;
+
+      @include range-width(0, 450px) {
+        padding: 10px;
+      }
+    }
+  }
+}
 
