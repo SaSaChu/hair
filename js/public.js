@@ -12,19 +12,18 @@ $(function() {
 
 
   // 圖片縮放
-  $(".imgSetpBoxs, .imgSerBoxs").imgLiquid ();
-
+  if ($.fn.imgLiquid) {
+    $(".imgSetpBoxs, .imgSerBoxs").imgLiquid ();
+  }
 
   // tag切換
   $('.tagMenu').click(function() {
-    $('.tagMenu').removeClass ('loi_s');
-    $(this).addClass ('loi_s');
+    $(this).addClass('loi_s').siblings().removeClass('loi_s');
 
-    $('.qaBoxs').removeClass('qaBoxs_show');
-    $('.qaBoxs').eq($(this).index()).addClass('qaBoxs_show');
+    $('.qaBoxs-list .qaBoxs').eq($(this).index()).addClass('qaBoxs_show').siblings().removeClass('qaBoxs_show');
    });
 
-  $('.tagMenu').eq (0).click();
+  $('.tagMenu').eq(0).click();
 
 
   // 手機版 select
