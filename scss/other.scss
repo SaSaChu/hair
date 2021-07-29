@@ -1,5 +1,34 @@
 @import "Ginkgo";
 
+$main_color: rgba(86, 108, 235, 1.00);  // 藍紫色
+$se_color: rgba(215, 101, 176, 1.00);  // 粉色
+$black50: rgba(45, 45, 45, .5);  // 淺灰色50
+$black80: rgba(45, 45, 45, .8);  // 淺灰色80
+$white50: rgba(255, 255, 255, .5);  // 淺白色50
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%;
+  // margin: 60px 0;
+  @include border-radius(15px);
+  overflow: hidden;
+
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+  }
+
+  @include range-width(0, 770px) {
+    margin: 35px 0;
+  }
+}
+
 .mob_close {
   @include range-width(0, 450px) {
     display: none !important;
@@ -11,6 +40,17 @@
   @include range-width(0, 450px) {
     display: inline-block !important;
   }
+}
+
+.o15 {
+  @include border-radius(15px);
+}
+
+.reImg {
+  display: inline-block;
+  width: 100%;
+  max-width: 160px;
+  float: left;
 }
 
 .imgSetp {
@@ -110,6 +150,10 @@
   padding-bottom: 80px;
 }
 
+.pT80 {
+  padding-top: 80px;
+}
+
 .m_pD30 {
   @include range-width(0, 450px) {
     padding-bottom: 30px;
@@ -117,6 +161,38 @@
 }
 
 
+.pageNub {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 60px 0;
+  
+
+  @include range-width(0, 450px) {
+    padding: 40px 0;
+  }
+
+  .arrow_box {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: $black80;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    @include border-radius(30px);
+    // border: 1px solid #636363;
+    @include transition(all .3s);
+
+    &.onPage {
+      color: white;
+      background-color: $main_color;
+    }
+
+    &:hover, &:active {
+      color: white;
+      background-color: $main_color;
+    }
+  }
+}
 
 
 

@@ -28,6 +28,8 @@ p { padding: 0; margin: 0; }
 
 .text18_w { display: inline-block; width: 100%; font-size: 1.38rem; color: white; }
 
+.store18 { display: inline-block; font-size: 1.3rem; padding-left: 15px; }
+
 .text20_80 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.8); font-size: 1.53rem; }
 
 .service24 { display: inline-block; width: 100%; font-size: 1.8rem; padding-bottom: 20px; text-align: left; }
@@ -39,7 +41,18 @@ p { padding: 0; margin: 0; }
 .text36 { display: inline-block; width: 100%; font-size: 2.5rem; font-weight: bold; padding-bottom: 20px; }
 
 .titleEnglish { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; padding: 25px 0; }
+.titleEnglish.retitle { font-size: 3rem; }
 @media screen and (max-width: 449px) and (min-width: 0) { .titleEnglish { font-size: 3rem; } }
 
 .titleWhite { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .titleWhite { font-size: 2.1rem; padding-bottom: 30px; } }
+
+.retextBlue { display: inline-block; width: 100%; color: #566ceb; font-weight: bold; text-align: left; font-size: 1.6rem; padding-bottom: 10px; }
+
+.retext { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.5); text-align: left; font-size: 1.23rem; padding-left: 20px; line-height: 1.8; padding-bottom: 20px; }
+
+.retextWhite { display: inline-block; width: 100%; color: white; text-align: left; font-size: 1.23rem; padding-bottom: 10px; }
+
+.retext50 { display: inline-block; width: 100%; color: rgba(255, 255, 255, 0.5); text-align: left; font-size: 1.23rem; padding: 20px 0; }
+
+.reBigWhite { display: inline-block; width: 100%; color: white; font-weight: bold; font-size: 5rem; text-align: left; padding-top: 40px; }

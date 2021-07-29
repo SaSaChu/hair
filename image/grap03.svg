@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="654px" viewBox="0 0 1440 654" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>grap03</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="654"></rect>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_recruit" transform="translate(0.000000, -954.000000)">
+            <g id="grap03" transform="translate(0.000000, 954.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" opacity="0.43968564"></g>
+                <g id="Group-20" mask="url(#mask-2)" fill="#E4ECFF" fill-rule="nonzero" opacity="0.701497396">
+                    <g transform="translate(-562.000000, 39.000000)" id="Oval">
+                        <circle cx="580" cy="580" r="580"></circle>
+                    </g>
+                </g>
+                <path d="M584.526712,305.562306 L596.494419,314.257354 C598.597343,315.785218 599.477292,318.493422 598.674046,320.965558 L594.102789,335.034442 C593.299543,337.506578 590.995807,339.18034 588.39645,339.18034 L573.60355,339.18034 C571.004193,339.18034 568.700457,337.506578 567.897211,335.034442 L563.325954,320.965558 C562.522708,318.493422 563.402657,315.785218 565.505581,314.257354 L577.473288,305.562306 C579.576213,304.034442 582.423787,304.034442 584.526712,305.562306 Z" id="Polygon" fill="#DC70B9" fill-rule="nonzero" opacity="0.798642113" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

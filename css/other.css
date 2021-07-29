@@ -1,9 +1,17 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; overflow: hidden; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+@media screen and (max-width: 769px) and (min-width: 0) { .embed-container { margin: 35px 0; } }
+
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_close { display: none !important; } }
 
 .mob_open { display: none; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_open { display: inline-block !important; } }
+
+.o15 { -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+
+.reImg { display: inline-block; width: 100%; max-width: 160px; float: left; }
 
 .imgSetp { display: inline-block; width: 100%; max-width: 355px; }
 
@@ -33,4 +41,12 @@
 
 .pD80 { padding-bottom: 80px; }
 
+.pT80 { padding-top: 80px; }
+
 @media screen and (max-width: 449px) and (min-width: 0) { .m_pD30 { padding-bottom: 30px; } }
+
+.pageNub { display: inline-block; width: 100%; padding: 10px 0 60px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .pageNub { padding: 40px 0; } }
+.pageNub .arrow_box { display: inline-block; font-size: 1.3rem; color: rgba(45, 45, 45, 0.8); width: 40px; height: 40px; line-height: 40px; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.pageNub .arrow_box.onPage { color: white; background-color: #566ceb; }
+.pageNub .arrow_box:hover, .pageNub .arrow_box:active { color: white; background-color: #566ceb; }

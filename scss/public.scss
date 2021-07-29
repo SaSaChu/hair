@@ -102,6 +102,17 @@ footer {
   margin: 0 auto;
   @include clearfix();
 
+  &.reCentBoxs {
+    display: inline-block;
+    @include border-radius(15px);
+    padding: 50px 30px;
+    margin-top: -125px;
+    overflow: hidden;
+    background:  #292a3b url(../image/reBG.svg)  center center no-repeat;
+    -moz-background-size: contain;
+    background-size: contain;
+  }
+
   &.aspTD20 {
     padding: 20px 0; 
   }
@@ -147,7 +158,14 @@ footer {
     background-size: inherit;
   }
 
-  &.spaceAll50 {
+   &.pic03 {
+    background: url(../image/grap03.svg)  bottom left no-repeat;
+    -moz-background-size: inherit;
+    background-size: inherit;
+  }
+
+
+  &.spaceAll50 { 
     padding: 50px;
 
     @include range-width(0, 450px) {
@@ -182,6 +200,14 @@ footer {
       padding-left: 0;
     }
   }
+}
+
+// re
+.boxs30 {
+  display: inline-block;
+  width: 30%;
+  float: left;
+  padding-left: 20px;
 }
 
 .boxs70 {
@@ -336,12 +362,24 @@ footer {
     background: -webkit-linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
   }
 }
 
+.storBoxs {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+  border-top: 1px solid #cccccc;
+  padding: 50px 0;
+}
 
 
+.reBoxs {
+  display: inline-block;
+  width: calc(100% - 160px);
+  float: left;
+  padding-left: 20px;
+}
 
 
 

@@ -109,6 +109,12 @@ p {
   color: white;
 }
 
+.store18 {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding-left: 15px;
+}
+
 
 // 20pt
 .text20_80 {
@@ -161,6 +167,10 @@ p {
   font-weight: bold;
   padding: 25px 0;
 
+  &.retitle {
+    font-size: 3rem;
+  }
+
   @include range-width(0, 450px) {
     font-size: 3rem;
   }
@@ -178,6 +188,64 @@ p {
     padding-bottom: 30px;
   }
 }
+
+
+.retextBlue {
+  display: inline-block;
+  width: 100%;
+  color: $main_color;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.retext {
+  display: inline-block;
+  width: 100%;
+  color: $black50;
+  text-align: left;
+  font-size: 1.23rem;
+  padding-left: 20px;
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+.retextWhite {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 1.23rem;
+  padding-bottom: 10px;
+}
+
+.retext50 {
+  display: inline-block;
+  width: 100%;
+  color: $white50;
+  text-align: left;
+  font-size: 1.23rem;
+  padding: 20px 0;
+}
+
+.reBigWhite {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  text-align: left;
+  padding-top: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 

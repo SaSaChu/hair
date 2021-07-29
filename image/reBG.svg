@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1169px" height="940px" viewBox="0 0 1169 940" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>reBG</title>
+    <defs>
+        <polygon id="path-1" points="0 0 1169 0 1169 940 0 940"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#2F3043" offset="0%"></stop>
+            <stop stop-color="#464761" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-4" cx="883.5" cy="-30" rx="134.5" ry="128"></ellipse>
+        <linearGradient x1="0%" y1="9.25607528%" x2="86.2159095%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FFB7DC" offset="0%"></stop>
+            <stop stop-color="#85AEFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="4.71593814%" x2="100%" y2="95.2840619%" id="linearGradient-6">
+            <stop stop-color="#FFB7DC" offset="0%"></stop>
+            <stop stop-color="#85AEFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07_recruit" transform="translate(-136.000000, -1544.000000)">
+            <g id="reBG" transform="translate(136.000000, 1544.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <g id="Oval" opacity="0.404645647" fill-rule="nonzero" mask="url(#mask-2)">
+                    <use fill="#464761" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                </g>
+                <circle id="Oval" fill="url(#linearGradient-5)" fill-rule="nonzero" opacity="0.278855097" mask="url(#mask-2)" cx="402" cy="88" r="16"></circle>
+                <ellipse id="Oval" fill="url(#linearGradient-6)" fill-rule="nonzero" opacity="0.291922433" mask="url(#mask-2)" cx="569.5" cy="1014" rx="134.5" ry="128"></ellipse>
+                <path d="M1114,813 C1114,838.405098 1092.50967,859 1066,859 C1039.49033,859 1018,838.405098 1018,813 L1018,813 Z" id="Combined-Shape" fill="#464761" fill-rule="nonzero" opacity="0.598865327" mask="url(#mask-2)"></path>
+                <path d="M1033.11582,64.9357904 L1028.16267,67.3770625 C1027.1719,67.865384 1025.97287,67.4580727 1025.48455,66.4673073 C1025.29463,66.0819901 1025.23383,65.6457648 1025.31114,65.2232016 L1026.19226,60.4069179 C1026.31625,59.7291987 1026.08269,59.0353781 1025.57409,58.5706085 L1021.9363,55.2462603 C1021.12092,54.5011303 1021.06396,53.2360818 1021.80909,52.4206953 C1022.12483,52.0751837 1022.55175,51.8513533 1023.01552,51.7881759 L1028.27754,51.0713479 C1028.91773,50.9841366 1029.47636,50.5930275 1029.77733,50.0213045 L1032.23025,45.36179 C1032.74479,44.3843829 1033.95425,44.0091533 1034.93165,44.5236911 C1035.28928,44.711959 1035.58148,45.0041596 1035.76975,45.36179 L1038.22267,50.0213045 C1038.52364,50.5930275 1039.08227,50.9841366 1039.72246,51.0713479 L1044.98448,51.7881759 C1046.07894,51.9372707 1046.84531,52.9453718 1046.69622,54.0398326 C1046.63304,54.5035991 1046.40921,54.9305192 1046.0637,55.2462603 L1042.42591,58.5706085 C1041.91731,59.0353781 1041.68375,59.7291987 1041.80774,60.4069179 L1042.68886,65.2232016 C1042.88764,66.3097376 1042.16797,67.3516915 1041.08144,67.5504707 C1040.65887,67.6277777 1040.22265,67.566975 1039.83733,67.3770625 L1034.88418,64.9357904 C1034.32674,64.6610429 1033.67326,64.6610429 1033.11582,64.9357904 Z" id="Star" fill="#DC70B9" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

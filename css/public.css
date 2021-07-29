@@ -22,6 +22,7 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 
 .allBoxs { display: inline-block; width: 100%; max-width: 1200px; margin: 0 auto; *zoom: 1; }
 .allBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
+.allBoxs.reCentBoxs { display: inline-block; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 50px 30px; margin-top: -125px; overflow: hidden; background: #292a3b url(../image/reBG.svg) center center no-repeat; -moz-background-size: contain; background-size: contain; }
 .allBoxs.aspTD20 { padding: 20px 0; }
 .allBoxs.aspTD30 { padding: 30px 0; }
 .allBoxs.aspD50 { padding-bottom: 50px; }
@@ -33,6 +34,7 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 .fullBoxs { display: inline-block; width: 100%; }
 .fullBoxs.pic01 { background: url(../image/grap01.svg) 650px -144px no-repeat; -moz-background-size: unset; background-size: unset; }
 .fullBoxs.pic02 { background: url(../image/grap02.svg) bottom right no-repeat; -moz-background-size: inherit; background-size: inherit; }
+.fullBoxs.pic03 { background: url(../image/grap03.svg) bottom left no-repeat; -moz-background-size: inherit; background-size: inherit; }
 .fullBoxs.spaceAll50 { padding: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .fullBoxs.spaceAll50 { padding: 25px; } }
 
@@ -43,6 +45,8 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs50 { width: 100%; } }
 .boxs50.pL50 { padding-left: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs50.pL50 { padding-left: 0; } }
+
+.boxs30 { display: inline-block; width: 30%; float: left; padding-left: 20px; }
 
 .boxs70 { display: inline-block; width: 70%; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs70 { width: 100%; } }
@@ -74,3 +78,7 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 
 .fanImgBoxs { display: inline-block; width: 100%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; overflow: hidden; position: relative; margin-bottom: 30px; }
 .fanImgBoxs .fanDay { display: inline-block; position: absolute; left: 10px; bottom: 10px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 5px 10px; color: white; font-size: 1.1rem; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */ background: #f6add9; /* Old browsers */ background: -moz-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
+
+.storBoxs { display: inline-block; width: 100%; max-width: 1200px; border-top: 1px solid #cccccc; padding: 50px 0; }
+
+.reBoxs { display: inline-block; width: calc(100% - 160px); float: left; padding-left: 20px; }
