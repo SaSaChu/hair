@@ -23,7 +23,6 @@ $(function() {
     $('.qaBoxs-list .qaBoxs').eq($(this).index()).addClass('qaBoxs_show').siblings().removeClass('qaBoxs_show');
    });
 
-  $('.tagMenu').eq(0).click();
 
 
   // 手機版 select
@@ -42,7 +41,7 @@ $(function() {
 
   // 手風琴
   var oneOpen = true;
-
+  $('.qaBoxs-list .qaBoxs').addClass('qaBoxs_show')
   // 這裡就看你怎麼命名就改就好
   $('.accordion .p_page').each (function () {
     // 內容不用看
@@ -63,6 +62,7 @@ $(function() {
     
     $(this).get (0).run ();
   });
+  $('.tagMenu').eq(0).click();
 
 
 });
