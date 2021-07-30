@@ -6,6 +6,12 @@ $black50: rgba(45, 45, 45, .5);  // 淺灰色50
 $black80: rgba(45, 45, 45, .8);  // 淺灰色80
 $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
+.m_w80 {
+  @include range-width(0, 450px) {
+    width: 80%;
+  }
+}
+
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%; 
@@ -51,6 +57,10 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   width: 100%;
   max-width: 160px;
   float: left;
+
+  @include range-width(0, 450px) {
+    max-width: 95px;
+  }
 }
 
 .imgFull {
@@ -171,6 +181,20 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 .m_pD30 {
   @include range-width(0, 450px) {
     padding-bottom: 30px;
+  }
+}
+
+
+.m_pD20 {
+  @include range-width(0, 450px) {
+    padding-bottom: 20px;
+  }
+}
+
+.m_pLR15 {
+  @include range-width(0, 450px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

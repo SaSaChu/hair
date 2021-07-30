@@ -4,7 +4,10 @@ p { padding: 0; margin: 0; }
 
 .lineH30 { line-height: 2.3rem; }
 
-.lineH50 { line-height: 3.8rem; }
+.m_lineH50 { line-height: 50px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .m_lineH50 { line-height: normal; } }
+
+.lineH50 { line-height: 50px; }
 
 .taL { text-align: left; }
 
@@ -34,16 +37,18 @@ p { padding: 0; margin: 0; }
 .text20_80 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.8); font-size: 1.53rem; }
 
 .service24 { display: inline-block; width: 100%; font-size: 1.8rem; padding-bottom: 20px; text-align: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .service24 { padding-bottom: 15px; } }
 
 .service16 { display: inline-block; font-size: 1.23rem; padding-bottom: 10px; float: left; }
 
 .service18 { display: inline-block; font-size: 1.3rem; padding-bottom: 10px; font-weight: bold; float: right; }
 
 .text36 { display: inline-block; width: 100%; font-size: 2.5rem; font-weight: bold; padding-bottom: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .text36 { padding: 30px 0 20px 0; } }
 
 .titleEnglish { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; padding: 25px 0; }
 .titleEnglish.retitle { font-size: 3rem; }
-@media screen and (max-width: 449px) and (min-width: 0) { .titleEnglish { font-size: 3rem; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .titleEnglish { font-size: 3rem; padding: 15px 0; } }
 
 .titleWhite { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; color: white; }
 .titleWhite.wBT { color: black !important; }
@@ -58,3 +63,4 @@ p { padding: 0; margin: 0; }
 .retext50 { display: inline-block; width: 100%; color: rgba(255, 255, 255, 0.5); text-align: left; font-size: 1.23rem; padding: 20px 0; }
 
 .reBigWhite { display: inline-block; width: 100%; color: white; font-weight: bold; font-size: 5rem; text-align: left; padding-top: 40px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .reBigWhite { padding-top: 23px; font-size: 3rem; } }

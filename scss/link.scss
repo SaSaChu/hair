@@ -35,6 +35,11 @@ button {
     display: inline-block;
     width: 80%;
     float: left;
+
+    @include range-width(0, 450px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &:hover {

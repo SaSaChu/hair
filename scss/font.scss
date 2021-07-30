@@ -15,8 +15,15 @@ p {
   line-height: 2.3rem;
 }
 
+.m_lineH50 {
+  line-height: 50px;
+  @include range-width(0, 450px) {
+    line-height: normal;
+  }
+}
+
 .lineH50 {
-  line-height: 3.8rem;
+  line-height: 50px;
 }
 
 .taL {
@@ -136,6 +143,10 @@ p {
   font-size: 1.8rem;
   padding-bottom: 20px;
   text-align: left;
+
+  @include range-width(0, 450px) {
+    padding-bottom: 15px;
+  }
 }
 
 .service16 {
@@ -160,6 +171,10 @@ p {
   font-size: 2.5rem;
   font-weight: bold;
   padding-bottom: 20px;
+
+  @include range-width(0, 450px) {
+    padding: 30px 0 20px 0;
+  }
 }
 
 
@@ -177,6 +192,7 @@ p {
 
   @include range-width(0, 450px) {
     font-size: 3rem;
+    padding: 15px 0;
   }
 }
 
@@ -245,6 +261,11 @@ p {
   font-size: 5rem;
   text-align: left;
   padding-top: 40px;
+
+  @include range-width(0, 450px) {
+    padding-top: 23px;
+    font-size: 3rem;
+  }
 }
 
 

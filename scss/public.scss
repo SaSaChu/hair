@@ -83,6 +83,12 @@ footer {
   align-items: center;
   height: 320px;
 
+  @include range-width(0, 450px) {
+    max-width: none;
+    height: 290px;
+    padding: 0 15px;
+  }
+
   &.gradual {
     max-width: none;
     margin: auto;
@@ -111,6 +117,13 @@ footer {
     background:  #292a3b url(../image/reBG.svg)  center center no-repeat;
     -moz-background-size: contain;
     background-size: contain;
+
+    @include range-width(0, 450px) {
+      padding: 18px;
+      margin-top: -42px;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
   }
 
   &.fasBorD {
@@ -164,6 +177,12 @@ footer {
 .fullBoxs {
   display: inline-block;
   width: 100%;
+
+  &.m_fullspace {
+    @include range-width(0, 450px) {
+      padding: 0 15px;
+    }
+  }
 
   &.pic01 {
     background: url(../image/grap01.svg)  650px -144px no-repeat;
@@ -230,6 +249,11 @@ footer {
   width: 30%;
   float: left;
   padding-left: 20px;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .boxs70 {
@@ -260,9 +284,9 @@ footer {
   display: inline-block;
   width: 100%;
 
-  @include range-width(0, 450px) {
-    padding: 0 15px;
-  }
+  // @include range-width(0, 450px) {
+  //   padding: 0 15px;
+  // }
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcd6ed+0,c4d1fc+62,f0d5ef+100 */
   background: #fcd6ed; /* Old browsers */
@@ -309,6 +333,7 @@ footer {
     background: #2f3143 url(../image/m_bookingBg.svg)  top left no-repeat;
     -moz-background-size: cover;
     background-size: cover;
+    margin-bottom: 50px;
   }
 }
 
@@ -336,9 +361,18 @@ footer {
   @include border-radius(15px);
   overflow: hidden;
   
+  @include range-width(0, 450px) {
+    width: 100%;
+  }
 
   &:nth-child(3n+2) {
-    margin: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @include range-width(0, 450px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -353,12 +387,28 @@ footer {
   background-color: white;
 
 
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+
   &:nth-child(3n+2) {
-    margin: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @include range-width(0, 450px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &:nth-child(3n+3) {
     margin-bottom: 50px;
+
+    @include range-width(0, 450px) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -375,12 +425,27 @@ footer {
   width: calc(100% / 3 - 50px * 2 / 3);
   float: left;
 
+  @include range-width(0, 450px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
   &:nth-child(3n+2) {
-    margin: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @include range-width(0, 450px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 
   &:nth-child(3n+3) {
     margin-bottom: 50px;
+
+    @include range-width(0, 450px) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -391,6 +456,10 @@ footer {
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 15px;
+  }
   
   .fanDay {
     display: inline-block;
@@ -424,6 +493,10 @@ footer {
   width: calc(100% - 160px);
   float: left;
   padding-left: 20px;
+
+  @include range-width(0, 450px) {
+    width: calc(100% - 95px);
+  }
 }
 
 

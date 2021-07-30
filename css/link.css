@@ -6,6 +6,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .btn01 { padding: 10px 30px; font-size: 1.23rem; color: #566ceb; border: 1px solid #566ceb; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn01.full100 { display: inline-block; width: 80%; float: left; }
+@media screen and (max-width: 449px) and (min-width: 0) { .btn01.full100 { width: 100%; margin-bottom: 20px; } }
 .btn01:hover { color: white; background-color: #566ceb; }
 
 .btn02 { display: inline-block; width: 100%; max-width: 200px; padding: 10px 0; font-size: 1.38rem; color: white; border: 1px solid #566ceb; background-color: #566ceb; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
