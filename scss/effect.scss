@@ -7,7 +7,6 @@ $black80: rgba(45, 45, 45, .8);  // 淺灰色80
 $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 
-
 // 手機Menu
 .m_header_r {
   display: none;
@@ -214,4 +213,45 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
     }
   }
 }
+
+.flex {
+  display: flex;
+  height: 300px;
+  padding: 15px;
+  background-color: #61a0f8;
+  flex-wrap: wrap;
+  // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around;
+  justify-content: center;
+  
+  // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around | stretch
+  align-content: center;
+}
+
+.item {
+  width: 25%;
+  height: 80px;
+  background-color: #f08bc3;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.flex-2 {
+  width: 40%;
+  height: 120px;
+  background-color: #f08bc3;
+}
+
+
+
+
+
+
+
+
+
+
 

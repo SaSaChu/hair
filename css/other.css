@@ -13,6 +13,8 @@
 
 .reImg { display: inline-block; width: 100%; max-width: 160px; float: left; }
 
+.imgFull { display: inline-block; width: 100%; max-width: 1200px; }
+
 .imgSetp { display: inline-block; width: 100%; max-width: 355px; }
 
 .imgSetpBoxs { display: inline-block; width: 100%; height: 465px; }
@@ -41,9 +43,15 @@
 
 .pD80 { padding-bottom: 80px; }
 
+.pD300 { padding-bottom: 300px; }
+
 .pT80 { padding-top: 80px; }
 
+.pT50 { padding-top: 50px; }
+
 @media screen and (max-width: 449px) and (min-width: 0) { .m_pD30 { padding-bottom: 30px; } }
+
+.mD80 { margin-bottom: 80px; }
 
 .pageNub { display: inline-block; width: 100%; padding: 10px 0 60px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageNub { padding: 40px 0; } }

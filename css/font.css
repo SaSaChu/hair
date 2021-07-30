@@ -14,6 +14,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .footer_menu { text-align: center; } }
 
 .white50 { display: inline-block; width: 100%; color: rgba(255, 255, 255, 0.5); font-size: 1.23rem; }
+.white50.wB { color: black !important; }
 
 .fan16 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.5); font-size: 1.23rem; line-height: 1.5; text-align: left; padding-bottom: 30px; }
 
@@ -45,6 +46,7 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .titleEnglish { font-size: 3rem; } }
 
 .titleWhite { display: inline-block; width: 100%; font-size: 3.84rem; font-weight: bold; color: white; }
+.titleWhite.wBT { color: black !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .titleWhite { font-size: 2.1rem; padding-bottom: 30px; } }
 
 .retextBlue { display: inline-block; width: 100%; color: #566ceb; font-weight: bold; text-align: left; font-size: 1.6rem; padding-bottom: 10px; }

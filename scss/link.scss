@@ -67,10 +67,16 @@ button {
   padding: 10px 30px;
   font-size: 1.38rem;
   color: $black50;
-  border: 1px solid $black50;
+  font-weight: bold;
+  // background-color: $white50;
+  border: 2px solid $black50;
   @include border-radius(15px);
   @include transition(all .3s);
   float: left;
+
+  &.b3_nL {
+    float: none;
+  }
 
   &:hover {
     color: white;

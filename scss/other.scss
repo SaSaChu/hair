@@ -53,6 +53,12 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   float: left;
 }
 
+.imgFull {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .imgSetp {
   display: inline-block;
   width: 100%;
@@ -150,14 +156,26 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   padding-bottom: 80px;
 }
 
+.pD300 {
+  padding-bottom: 300px;
+}
+
 .pT80 {
   padding-top: 80px;
+}
+
+.pT50 {
+  padding-top: 50px;
 }
 
 .m_pD30 {
   @include range-width(0, 450px) {
     padding-bottom: 30px;
   }
+}
+
+.mD80 {
+  margin-bottom: 80px;
 }
 
 

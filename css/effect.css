@@ -34,3 +34,9 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .accordion .p_page > span { padding: 10px; font-size: 1.5rem; line-height: 33px; } }
 .accordion .p_page > div { display: inline-block; width: 100%; padding: 10px 60px; font-size: 1.38rem; color: #2d2d2d; line-height: 2; }
 @media screen and (max-width: 449px) and (min-width: 0) { .accordion .p_page > div { padding: 10px; } }
+
+.flex { display: flex; height: 300px; padding: 15px; background-color: #61a0f8; flex-wrap: wrap; justify-content: center; align-content: center; }
+
+.item { width: 25%; height: 80px; background-color: #f08bc3; margin: 5px; display: flex; justify-content: center; align-items: center; color: white; font-size: 2rem; }
+
+.flex-2 { width: 40%; height: 120px; background-color: #f08bc3; }
