@@ -17,7 +17,7 @@ p {
 
 .m_lineH50 {
   line-height: 50px;
-  @include range-width(0, 450px) {
+  @include range-width(0, 770px) {
     line-height: normal;
   }
 }
@@ -94,6 +94,15 @@ p {
     line-height: 1.5;
     padding: 20px 0;
     min-height: 90px;
+    font-weight: bold;
+
+    @include range-width(450px, 770px) {
+      min-height: 110px;
+    }
+
+    @include range-width(0, 450px) {
+      padding-bottom: 60px;
+    }
   }
 }
 
@@ -154,6 +163,10 @@ p {
   font-size: 1.23rem;
   padding-bottom: 10px;
   float: left;
+  @include range-width(450px, 770px) {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .service18 {
@@ -162,6 +175,10 @@ p {
   padding-bottom: 10px;
   font-weight: bold;
   float: right;
+  @include range-width(450px, 770px) {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 // 36pt

@@ -5,7 +5,7 @@ p { padding: 0; margin: 0; }
 .lineH30 { line-height: 2.3rem; }
 
 .m_lineH50 { line-height: 50px; }
-@media screen and (max-width: 449px) and (min-width: 0) { .m_lineH50 { line-height: normal; } }
+@media screen and (max-width: 769px) and (min-width: 0) { .m_lineH50 { line-height: normal; } }
 
 .lineH50 { line-height: 50px; }
 
@@ -24,7 +24,9 @@ p { padding: 0; margin: 0; }
 .tag50 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.5); font-size: 1.23rem; line-height: 1.5; }
 
 .tag80 { display: inline-block; width: 100%; color: rgba(45, 45, 45, 0.8); font-size: 1.23rem; }
-.tag80.stepuse { line-height: 1.5; padding: 20px 0; min-height: 90px; }
+.tag80.stepuse { line-height: 1.5; padding: 20px 0; min-height: 90px; font-weight: bold; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .tag80.stepuse { min-height: 110px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .tag80.stepuse { padding-bottom: 60px; } }
 
 .tagPink { display: inline-block; width: 100%; color: #d765b0; font-size: 1.23rem; }
 
@@ -40,8 +42,10 @@ p { padding: 0; margin: 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .service24 { padding-bottom: 15px; } }
 
 .service16 { display: inline-block; font-size: 1.23rem; padding-bottom: 10px; float: left; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .service16 { width: 100%; text-align: left; } }
 
 .service18 { display: inline-block; font-size: 1.3rem; padding-bottom: 10px; font-weight: bold; float: right; }
+@media screen and (max-width: 769px) and (min-width: 450px) { .service18 { width: 100%; text-align: left; } }
 
 .text36 { display: inline-block; width: 100%; font-size: 2.5rem; font-weight: bold; padding-bottom: 20px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .text36 { padding: 30px 0 20px 0; } }

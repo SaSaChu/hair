@@ -14,6 +14,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .btn03 { display: inline-block; padding: 10px 30px; font-size: 1.38rem; color: rgba(45, 45, 45, 0.5); font-weight: bold; border: 2px solid rgba(45, 45, 45, 0.5); -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; float: left; }
 .btn03.b3_nL { float: none; }
+@media screen and (max-width: 449px) and (min-width: 0) { .btn03.b3_nL { float: left; } }
 .btn03:hover { color: white; background-color: #d765b0; border: 1px solid #d765b0; }
 
 .menu { display: inline-block; font-size: 1.38rem; color: #2d2d2d; font-weight: bold; text-align: center; padding-right: 40px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }

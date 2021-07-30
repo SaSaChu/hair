@@ -7,7 +7,7 @@ $black80: rgba(45, 45, 45, .8);  // 淺灰色80
 $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 .m_w80 {
-  @include range-width(0, 450px) {
+  @include range-width(0, 770px) {
     width: 80%;
   }
 }
@@ -32,6 +32,12 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
   @include range-width(0, 770px) {
     margin: 35px 0;
+  }
+}
+
+.min_close {
+  @include range-width(0, 1040px) {
+    display: none !important;
   }
 }
 
@@ -179,7 +185,7 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 }
 
 .m_pD30 {
-  @include range-width(0, 450px) {
+  @include range-width(0, 770px) {
     padding-bottom: 30px;
   }
 }

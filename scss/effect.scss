@@ -11,7 +11,7 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 .m_header_r {
   display: none;
 
-  @include range-width(0, 450px) {
+  @include range-width(0, 1040px) {
     display: inline-block;
   }
 }
@@ -33,7 +33,7 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   @include transition(all .3s);
   
 
-  @include range-width(0, 450px) {
+  @include range-width(0, 1040px) {
     display: inline-block;
   }
 
