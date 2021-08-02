@@ -7,6 +7,206 @@ $black80: rgba(45, 45, 45, .8);  // 淺灰色80
 $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 
+// 首頁Banner
+#banner {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  float: left;
+  padding-bottom: 10px;
+}
+
+#tab > img:not(:first-child) {
+  display: none;
+}
+
+.lunbo_btn {
+  height: 15px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: -40px;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+
+  span {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #b4b5b7;
+    border-radius: 50%;
+    margin: 0px 2px;
+    cursor: pointer;
+
+    &.hover {
+      background-color: #ffb23c;
+    }
+  }
+}
+
+.arrow {
+  display: none;
+  width: 30px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 999;
+
+  span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+}
+
+.slider_left {
+  margin: 25px 0 0 10px;
+  transform: rotate(45deg);
+}
+
+.prve {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.slider_right {
+  margin: 25px 0 0 5px;
+  transform: rotate(-135deg);
+}
+
+.arrow:hover {
+  background: #444;
+}
+
+#banner:hover .arrow {
+  display: block;
+}
+
+
+
+// 首頁髮訊
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+
+  /* 容器必须有固定高度
+   * 且高度大于最高的列高 */
+  height: 900px;
+
+  /* 非必须 */
+  // background-color: #f7f7f7;
+  border-radius: 15px;
+  padding-top: 50px;
+  width: 100%;
+  // margin: 40px auto;
+  counter-reset: items;
+}
+
+.item {
+  width: 32%;
+
+  @include range-width(0, 450px) {
+    width: 50%;
+  }
+
+  /* 非必须 */
+  position: relative;
+  margin-bottom: 2%;
+  border-radius: 15px;
+  // border: 1px solid #4290e2;
+  // box-shadow: 0 2px 2px rgba(0, 90, 250, 0.05), 0 4px 4px rgba(0, 90, 250, 0.05), 0 8px 8px rgba(0, 90, 250, 0.05), 0 16px 16px rgba(0, 90, 250, 0.05);
+  color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .infan {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    text-align: left;
+
+    .infanDay {
+      display: inline-block;
+      @include border-radius(15px);
+      padding: 5px 10px;
+      color: white;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */
+      background: #f6add9; /* Old browsers */
+      background: -moz-linear-gradient(45deg,  #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    .infantext {
+      display: inline-block;
+      width: 100%;
+      font-size: 1.23rem;
+      color: white;
+      padding-right: 15px;
+    }
+  }
+}
+
+/* 仅用于打印数字 */
+
+// div.item::before {
+//   counter-increment: items;
+//   content: counter(items);
+// }
+
+/* 将内容块重排为3列 */
+
+.item {
+  &:nth-of-type(3n+1) {
+    order: 1;
+  }
+
+  &:nth-of-type(3n+2) {
+    order: 2;
+  }
+
+  &:nth-of-type(3n+3) {
+    order: 3;
+  }
+
+  @include range-width(0, 450px) {
+    &:nth-of-type(2n+1) {
+      order: 1;
+    }
+
+    &:nth-of-type(2n+2) {
+      order: 2;
+    }
+  }
+}
+
+/* 强制换列 */
+
+.break {
+  flex-basis: 100%;
+  width: 0;
+  // border: 1px solid #ddd;
+  margin: 0;
+  content: "";
+  padding: 0;
+}
+
+
+
 // 手機Menu
 .m_header_r {
   display: none;
@@ -214,36 +414,6 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   }
 }
 
-.flex {
-  display: flex;
-  height: 300px;
-  padding: 15px;
-  background-color: #61a0f8;
-  flex-wrap: wrap;
-  // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around;
-  justify-content: center;
-  
-  // 修改以下值試試看 flex-start | flex-end | center | space-between | space-around | stretch
-  align-content: center;
-}
-
-.item {
-  width: 25%;
-  height: 80px;
-  background-color: #f08bc3;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 2rem;
-}
-
-.flex-2 {
-  width: 40%;
-  height: 120px;
-  background-color: #f08bc3;
-}
 
 
 

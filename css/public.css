@@ -24,6 +24,7 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 .allBoxs { display: inline-block; width: 100%; max-width: 1200px; margin: 0 auto; *zoom: 1; }
 .allBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 1209px) and (min-width: 450px) { .allBoxs.minw { padding-left: 15px !important; padding-right: 15px !important; } }
+.allBoxs.sf { padding-top: 50px; margin-top: -450px; }
 .allBoxs.reCentBoxs { display: inline-block; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 50px 30px; margin-top: -125px; overflow: hidden; background: #292a3b url(../image/reBG.svg) center center no-repeat; -moz-background-size: contain; background-size: contain; }
 @media screen and (max-width: 449px) and (min-width: 0) { .allBoxs.reCentBoxs { padding: 18px; margin-top: -42px; -moz-background-size: cover; background-size: cover; } }
 .allBoxs.fasBorD { border-bottom: 1px solid #cccccc; margin-bottom: 50px; padding-bottom: 20px; }
@@ -32,9 +33,14 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 .allBoxs.aspD50 { padding-bottom: 50px; }
 .allBoxs.aspTD80 { padding: 80px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .allBoxs.aspTD80 { padding: 20px 15px; } }
+.allBoxs.aspD83 { padding-top: 80px; padding-bottom: 450px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .allBoxs.aspD83 { padding-left: 15px; padding-right: 15px; } }
 .allBoxs.aspD300 { padding-bottom: 300px; }
 .allBoxs.aspTD200 { padding: 200px 0; }
+@media screen and (max-width: 449px) and (min-width: 0) { .allBoxs.aspTD200 { padding: 100px 15px; } }
 .allBoxs.asmD200 { margin-bottom: -200px; }
+.allBoxs.asmL30 { padding-left: 80px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .allBoxs.asmL30 { padding-left: 0; } }
 
 .ds { display: inline-block; text-align: center; }
 
@@ -54,6 +60,7 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 
 .boxs50 { display: inline-block; width: 50%; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs50 { width: 100%; } }
+.boxs50.inbanner { display: flex; justify-content: center; align-items: center; min-height: 600px; }
 .boxs50.pL50 { padding-left: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .boxs50.pL50 { padding-left: 0; } }
 
@@ -96,6 +103,11 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 
 .serviceTypeBoxs { display: inline-block; width: 100%; padding: 30px; }
 @media screen and (max-width: 769px) and (min-width: 450px) { .serviceTypeBoxs { padding: 15px; } }
+
+.sfBoxs { display: inline-block; width: calc(100% / 4 - 30px * 3 / 4); float: left; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; background-color: white; box-shadow: 0 -2px 2px rgba(47, 49, 67, 0.05), 0 4px 4px rgba(47, 49, 67, 0.05), 0 8px 8px rgba(47, 49, 67, 0.05), 0 16px 16px rgba(47, 49, 67, 0.05); min-height: 300px; padding: 20px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .sfBoxs { width: calc(100% - 30px); margin: 15px; } }
+.sfBoxs:nth-child(n+2) { margin-left: 30px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .sfBoxs:nth-child(n+2) { margin: 15px; } }
 
 .fanBoxs { display: inline-block; width: calc(100% / 3 - 50px * 2 / 3); float: left; }
 @media screen and (max-width: 1029px) and (min-width: 770px) { .fanBoxs { width: calc(100% / 3 - 30px * 2 / 3); } }

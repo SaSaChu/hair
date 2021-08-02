@@ -1,5 +1,11 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
+.img400 { display: inline-block; width: 100%; height: 400px; }
+
+.img270 { display: inline-block; width: 100%; height: 270px; }
+
+.img335 { display: inline-block; width: 100%; height: 335px; }
+
 @media screen and (max-width: 769px) and (min-width: 0) { .m_w80 { width: 80%; } }
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; overflow: hidden; }
@@ -17,6 +23,8 @@
 
 .reImg { display: inline-block; width: 100%; max-width: 160px; float: left; }
 @media screen and (max-width: 449px) and (min-width: 0) { .reImg { max-width: 95px; } }
+
+.img128 { display: inline-block; width: 100%; max-width: 128px; }
 
 .imgFull { display: inline-block; width: 100%; max-width: 1200px; }
 
@@ -61,6 +69,8 @@
 @media screen and (max-width: 449px) and (min-width: 0) { .m_pLR15 { padding-left: 15px; padding-right: 15px; } }
 
 .mD80 { margin-bottom: 80px; }
+
+.mT50 { margin-top: 50px; }
 
 .pageNub { display: inline-block; width: 100%; padding: 10px 0 60px 0; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pageNub { padding: 40px 0; } }

@@ -15,6 +15,7 @@
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/imgLiquid-min.js"></script>
   </head>
   <body>
     
@@ -56,11 +57,86 @@
 
 
     <!-- banner -->
-    <div class='gradualBG' style='height:600px;'></div>
+    <div class='gradualBG'>
+      <div id="banner">    
+        <!-- 輪播圖片 -->
+        <div id="tab">
+            <div class="tabImg">
+                <div class='boxs50 inbanner'>
+                  <div class='allBoxs asmL30'>
+                    <p class='tag50 taL'>Haircut</p>
+                    <p class='titleEnglish taL'>11秀髮由內而外</br>綻放光彩</p>
+                    <p class='text20_80 lineH30 taL pD20'>
+                      Washing, Cutting and Styling Hair
+                    </p>
+                    <a href="index.html" class='btn04'>觀看更多</a>
+                  </div>
+                </div>
+                <div class='boxs50'><img src="image/b01.png" height="600"/></div>
+            </div>
+            <div class="tabImg">
+                <div class='boxs50 inbanner'>
+                  <div class='allBoxs asmL30'>
+                    <p class='tag50 taL'>Haircut</p>
+                    <p class='titleEnglish taL'>22秀髮由內而外</br>綻放光彩</p>
+                    <p class='text20_80 lineH30 taL pD20'>
+                      Washing, Cutting and Styling Hair
+                    </p>
+                    <a href="index.html" class='btn04'>觀看更多</a>
+                  </div>
+                </div>
+                <div clas
+                <div class='boxs50'><img src="image/b02.png" height="600"/></div>
+            </div>
+            <div class="tabImg">
+                <div class='boxs50 inbanner'>
+                  <div class='allBoxs asmL30'>
+                    <p class='tag50 taL'>Haircut</p>
+                    <p class='titleEnglish taL'>33秀髮由內而外</br>綻放光彩</p>
+                    <p class='text20_80 lineH30 taL pD20'>
+                      Washing, Cutting and Styling Hair
+                    </p>
+                    <a href="index.html" class='btn04'>觀看更多</a>
+                  </div>
+                </div>
+                <div clas
+                <div class='boxs50'><img src="image/b03.png" height="600"/></div>
+            </div>
+            <div class="tabImg">
+                <div class='boxs50 inbanner'>
+                  <div class='allBoxs asmL30'>
+                    <p class='tag50 taL'>Haircut</p>
+                    <p class='titleEnglish taL'>44秀髮由內而外</br>綻放光彩</p>
+                    <p class='text20_80 lineH30 taL pD20'>
+                      Washing, Cutting and Styling Hair
+                    </p>
+                    <a href="index.html" class='btn04'>觀看更多</a>
+                  </div>
+                </div>
+                <div clas
+                <div class='boxs50'><img src="image/b04.png" height="600"/></div>
+            </div>
+        </div>
+        <!-- 指示符 -->
+        <div class="lunbo_btn">
+            <span num="0" class="tabBtn hover"></span>
+            <span num="1" class="tabBtn"></span>
+            <span num="2" class="tabBtn"></span>
+            <span num="3" class="tabBtn"></span>
+        </div>    
+        <!-- 左右切換按鈕 -->
+       <!--  <div class="arrow prve">
+            <span class="slider_left"></span>
+        </div>
+        <div class="arrow next">
+            <span class="slider_right"></span>
+        </div>     -->
+    </div>
+    </div>
 
 
     <!-- 關於我們 -->
-    <div class='allBoxs aspTD80'>
+    <div class='allBoxs aspD83'>
       <div class='boxs50'><img src="image/pic01.png" class='imgPic01'></div>
       <div class='boxs50 pL50'>
         <p class='tag50 taL'>關於我們</p>
@@ -76,8 +152,37 @@
       </div>
     </div>
 
-
     <div class='gradualBG mD80'>
+      <!-- 服務特色 -->
+      <div class='allBoxs sf'>
+        <p class='tag50'>服務特色</p>
+        <p class='titleEnglish'>Service Features</p>
+        <p class='tag80 lineH30'>Within salons, hair stylists may rent their own station and</br>manage their clients independently.</p>
+      
+        <div class='allBoxs pT50'>
+          <div class='sfBoxs'>
+            <img src="image/in_icon01.svg" class='img128'>
+            <p class='text20_80 pTD20'>Good Prices</p>
+            <p class='tag50'>染髮 $499元</br>不分長短用量統一價</p>
+          </div>
+          <div class='sfBoxs'>
+            <img src="image/in_icon02.svg" class='img128'>
+            <p class='text20_80 pTD20'>Care</p>
+            <p class='tag50'>資生堂染護燙</br>呵護您的髮色與髮質</p>
+          </div>
+          <div class='sfBoxs'>
+            <img src="image/in_icon03.svg" class='img128'>
+            <p class='text20_80 pTD20'>Fast</p>
+            <p class='tag50'>LINE線上預約</br>隨時預約方便快速</p>
+          </div>
+          <div class='sfBoxs'>
+            <img src="image/in_icon04.svg" class='img128'>
+            <p class='text20_80 pTD20'>Profession</p>
+            <p class='tag50'>諮詢服務</br>現場頭髮專業諮詢</p>
+          </div>
+        </div>
+      </div>
+
       <!-- 服務項目 -->
       <div class='allBoxs aspTD80'>
         <div class='allBoxs'>
@@ -166,26 +271,65 @@
         <p class='titleEnglish'>Beauty Salon</p>
         <p class='tag80 lineH30'>Providing advice about hair products salons also provide</br>bonuses to stylists who bring in new business.</p>
         
-        <div class='fullBoxs spaceTD50'>
-          <div class="flex">
-            <div class="item">1</div>
-            <div class="item flex-2">2</div>
-            <div class="item">3</div>
-            <div class="item">3</div>
-            <div class="item">3</div>
-            <div class="item flex-2">2</div>
+        <div class="container">
+          <div class="item img270" style="height: 270px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/fpic01.jpg">
           </div>
+          <div class="item img400" style="height: 400px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營歡慶高雄巨蛋店高雄巨蛋店高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/pic06.png">
+          </div>
+          <div class="item img335" style="height: 335px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/pic05.png">
+          </div>
+          <div class="item img335" style="height: 335px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/pic07.png">
+          </div>
+          <div class="item img400" style="height: 400px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/pic07.png">
+          </div>
+          <div class="item img335" style="height: 335px">
+            <div class='infan'>
+              <p class='infanDay'>12 Dec, 2020</p>
+              <a href='' class='infantext'>歡慶 FaceColor高雄巨蛋店開幕試營</a>
+            </div>
+            <img src="image/fpic01.jpg">
+          </div>
+
+          
+          <span class="item break"></span>
+          <span class="item break"></span>
+          <span class="item break"></span>
         </div>
 
-        <div class='fullBoxs'><a href="booking.html" class='btn03 b3_nL'>線上預約</a></div>
+        <div class='fullBoxs'><a href="index.html" class='btn03 b3_nL'>觀看更多</a></div>
       </div>
       <!-- 店家 -->
-      <div class='allBoxs'>
+      <div class='allBoxs m_pLR15'>
         <div class='boxs50'>
           <p class='text36 taL'>彩登造型｜博愛店</p>
           <div class='allBoxs taL pD20'>
             <img src="image/icon01.svg">
-            <p class='store18 lineH50'>染髮、護髮、頭皮養護、染護套餐、剪髮、燙髮</p>
+            <p class='store18 m_lineH50 m_w80'>染髮、護髮、頭皮養護、染護套餐、剪髮、燙髮</p>
           </div>
 
           <div class='allBoxs taL pD20'>
@@ -195,7 +339,7 @@
 
           <div class='allBoxs taL pD20'>
             <img src="image/icon03.svg">
-            <p class='store18 lineH50'>AM11:00 ~ PM8:30</p>
+            <p class='store18 lineH50 m_w80'>AM11:00 ~ PM8:30</p>
           </div>
 
           <button class='btn01 full100'>預約本店</button>
@@ -209,7 +353,7 @@
 
     <!-- 淺色預約 -->
     <div class='in_blackfull'>
-      <div class='allBoxs'>
+      <div class='allBoxs m_pLR15'>
         <div class='footerBoxs'>
           <div class='fullBoxs spaceAll50'>
             <div class='boxs70'>
@@ -257,5 +401,75 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+    //輪播圖
+    var curIndex=0;//初始化
+    var img_number = document.getElementsByClassName('tabImg').length;
+    var _timer = setInterval(runFn,2000);//2秒
+    function runFn(){ //運行定時器         
+        curIndex = ++curIndex == img_number ? 0 : curIndex;//演算法 4為banner圖片數量
+        slideTo(curIndex);
+     }
+     
+     //圓點點擊切換輪播圖
+     window.onload = function  () {    //為按鈕初始化onclick事件
+        var tbs = document.getElementsByClassName("tabBtn");
+        for(var i=0;i<tbs.length;i++){
+            tbs[i].onclick = function  () {
+                clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+                slideTo(this.attributes['num'].value);
+                curIndex = this.attributes['num'].value
+                _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+            }
+        }
+    }
+
+    var prve = document.getElementsByClassName("prve");
+    prve[0].onclick = function () {//上一張
+        clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+        curIndex--;
+        if(curIndex == -1){
+            curIndex = img_number-1;
+        }
+        slideTo(curIndex);
+        _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+    }
+    
+    var next = document.getElementsByClassName("next");
+    next[0].onclick = function () {//下一張
+        clearInterval(_timer);//細節處理，關閉定時，防止點切圖和定時器函數衝突
+        curIndex++;
+        if(curIndex == img_number){
+            curIndex =0;
+        }
+        slideTo(curIndex);
+        _timer = setInterval(runFn,2000);//點擊事件處理完成，繼續開啟定時輪播
+    }
+    
+    //切換banner圖片 和 按鈕樣式
+    function slideTo(index){
+        console.log(index)
+        var index = parseInt(index);//轉int類型
+        var images = document.getElementsByClassName('tabImg');
+        for(var i=0;i<images.length;i++){//遍歷每個圖片
+            if( i == index ){
+                images[i].style.display = 'inline';//顯示            
+            }else{
+                images[i].style.display = 'none';//隱藏
+            }
+        }
+        var tabBtn = document.getElementsByClassName('tabBtn');
+        for(var j=0;j<tabBtn.length;j++){//遍歷每個按鈕
+            if( j == index ){
+                tabBtn[j].classList.add("hover");    //添加輪播按鈕hover樣式
+                curIndex=j;
+            }else{
+                tabBtn[j].classList.remove("hover");//去除輪播按鈕hover樣式
+            }
+        }
+        
+    }
+    
+</script>
   </body>
 </html>

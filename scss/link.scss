@@ -94,6 +94,24 @@ button {
   } 
 }
 
+.btn04 {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 1.38rem;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(41, 42, 59, 1.00);
+  @include border-radius(15px);
+  @include transition(all .3s);
+  float: left;
+
+  &:hover {
+    color: white;
+    background-color: $se_color;
+    border: 1px solid $se_color;
+  }
+}
+
 
 .menu {
   display: inline-block;

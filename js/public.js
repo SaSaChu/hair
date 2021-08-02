@@ -1,6 +1,8 @@
  
 $(function() {
 
+
+
   // 手機版Menu
   $('.m_header_r').click(function() {
     $('.m_menu').addClass('menu_open');
@@ -13,7 +15,7 @@ $(function() {
 
   // 圖片縮放
   if ($.fn.imgLiquid) {
-    $(".imgSetpBoxs, .imgSerBoxs").imgLiquid ();
+    $(".imgSetpBoxs, .imgSerBoxs, .img400, .img270, .img335").imgLiquid ();
   }
 
   // tag切換

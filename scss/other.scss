@@ -6,6 +6,23 @@ $black50: rgba(45, 45, 45, .5);  // 淺灰色50
 $black80: rgba(45, 45, 45, .8);  // 淺灰色80
 $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
+
+.img400{
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+.img270{
+  display: inline-block;
+  width: 100%;
+  height: 270px;
+}
+.img335{
+  display: inline-block;
+  width: 100%;
+  height: 335px;
+}
+
 .m_w80 {
   @include range-width(0, 770px) {
     width: 80%;
@@ -67,6 +84,12 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   @include range-width(0, 450px) {
     max-width: 95px;
   }
+}
+
+.img128 {
+  display: inline-block;
+  width: 100%;
+  max-width: 128px;
 }
 
 .imgFull {
@@ -208,6 +231,10 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   margin-bottom: 80px;
 }
 
+
+.mT50 {
+  margin-top: 50px;
+}
 
 .pageNub {
   display: inline-block;
