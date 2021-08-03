@@ -17,7 +17,6 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
   width: 100%;
 
   padding-bottom: 10px;
-  border: 1px solid rgba(255, 0, 0, .3);
   
 
   .banners {
@@ -39,7 +38,6 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      border: 1px solid rgba(255, 0, 0, .3);
       @include transition(transform .3s);
       
       .area1, .area2 {
@@ -47,7 +45,6 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
         height: 100%;
         width: 50%;
         flex-shrink: 0;
-        border: 1px solid rgba(255, 0, 0, .3);
       }
       .area1 {
         padding-left: 80px;
@@ -76,7 +73,6 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 0, 0, .3);
     
 
     label {
@@ -208,117 +204,68 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 
 // 首頁髮訊
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-
-  /* 容器必须有固定高度
-   * 且高度大于最高的列高 */
-  height: 900px;
-
-  /* 非必须 */
-  // background-color: #f7f7f7;
-  border-radius: 15px;
-  padding-top: 50px;
+.masonry {
+  display: inline-block;
   width: 100%;
-  // margin: 40px auto;
-  counter-reset: items;
-}
-
-.item {
-  width: 32%;
-
-  @include range-width(0, 450px) {
-    width: 50%;
-  }
-
-  /* 非必须 */
-  position: relative;
-  margin-bottom: 2%;
-  border-radius: 15px;
-  // border: 1px solid #4290e2;
-  // box-shadow: 0 2px 2px rgba(0, 90, 250, 0.05), 0 4px 4px rgba(0, 90, 250, 0.05), 0 8px 8px rgba(0, 90, 250, 0.05), 0 16px 16px rgba(0, 90, 250, 0.05);
-  color: #fff;
-  padding: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-
-  .infan {
+  
+  padding-top: 50px;
+  .item {
+    position: relative;
     display: inline-block;
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    text-align: left;
+    width: calc(100% / 3);
 
-    .infanDay {
-      display: inline-block;
-      @include border-radius(15px);
-      padding: 5px 10px;
-      color: white;
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */
-      background: #f6add9; /* Old browsers */
-      background: -moz-linear-gradient(45deg,  #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    }
+    padding: 10px;
+    @include range-width(0, 450px) {
+      width: calc(100% / 2);
+    };
 
-    .infantext {
+    .content {
       display: inline-block;
       width: 100%;
-      font-size: 1.23rem;
-      color: white;
-      padding-right: 15px;
+      height: 100%;
+
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 2px rgba(0, 90, 250, 0.05), 0 4px 4px rgba(0, 90, 250, 0.05), 0 8px 8px rgba(0, 90, 250, 0.05), 0 16px 16px rgba(0, 90, 250, 0.05);
+      padding: 15px;
+      color: #fff;
+      @include border-radius(15px);
+
+      .infan {
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        text-align: left;
+
+        .infanDay {
+          display: inline-block;
+          @include border-radius(15px);
+          padding: 5px 10px;
+          color: white;
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */
+          background: #f6add9; /* Old browsers */
+          background: -moz-linear-gradient(45deg,  #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg,  #f6add9 0%,#88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+
+        .infantext {
+          display: inline-block;
+          width: 100%;
+          font-size: 1.23rem;
+          color: white;
+          padding-right: 15px;
+        }
+      }
     }
   }
 }
 
-/* 仅用于打印数字 */
 
-// div.item::before {
-//   counter-increment: items;
-//   content: counter(items);
-// }
-
-/* 将内容块重排为3列 */
-
-.item {
-  &:nth-of-type(3n+1) {
-    order: 1;
-  }
-
-  &:nth-of-type(3n+2) {
-    order: 2;
-  }
-
-  &:nth-of-type(3n+3) {
-    order: 3;
-  }
-
-  @include range-width(0, 450px) {
-    &:nth-of-type(2n+1) {
-      order: 1;
-    }
-
-    &:nth-of-type(2n+2) {
-      order: 2;
-    }
-  }
-}
-
-/* 强制换列 */
-
-.break {
-  flex-basis: 100%;
-  width: 0;
-  // border: 1px solid #ddd;
-  margin: 0;
-  content: "";
-  padding: 0;
-}
 
 
 

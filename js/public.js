@@ -15,8 +15,12 @@ $(function() {
 
   // 圖片縮放
   if ($.fn.imgLiquid) {
-    $(".imgSetpBoxs, .imgSerBoxs, .img400, .img270, .img335").imgLiquid ();
+    $(".imgSetpBoxs, .imgSerBoxs, .img400 > .content, .img270 > .content, .img335 > .content").imgLiquid ();
   }
+  if ($.fn.masonry) {
+    $('.masonry').masonry({ itemSelector: '.item' })
+  }
+
 
   // tag切換
   $('.tagMenu').click(function() {

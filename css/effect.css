@@ -1,10 +1,10 @@
 @charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-#banner { position: relative; overflow: hidden; display: inline-block; width: 100%; padding-bottom: 10px; border: 1px solid rgba(255, 0, 0, 0.3); }
+#banner { position: relative; overflow: hidden; display: inline-block; width: 100%; padding-bottom: 10px; }
 #banner .banners { position: relative; z-index: 1; display: inline-block; width: 100%; height: 600px; }
-#banner .banners .banner { position: absolute; left: 0; top: 0; display: inline-flex; width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: flex-start; border: 1px solid rgba(255, 0, 0, 0.3); -moz-transition: -moz-transform 0.3s; -o-transition: -o-transform 0.3s; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; }
-#banner .banners .banner .area1, #banner .banners .banner .area2 { display: inline-block; height: 100%; width: 50%; flex-shrink: 0; border: 1px solid rgba(255, 0, 0, 0.3); }
+#banner .banners .banner { position: absolute; left: 0; top: 0; display: inline-flex; width: 100%; height: 100%; flex-direction: row; align-items: center; justify-content: flex-start; -moz-transition: -moz-transform 0.3s; -o-transition: -o-transform 0.3s; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; }
+#banner .banners .banner .area1, #banner .banners .banner .area2 { display: inline-block; height: 100%; width: 50%; flex-shrink: 0; }
 #banner .banners .banner .area1 { padding-left: 80px; }
 #banner .banners .banner:nth-child(1) { -moz-transform: translateX(0%); -ms-transform: translateX(0%); -webkit-transform: translateX(0%); transform: translateX(0%); }
 #banner .banners .banner:nth-child(2) { -moz-transform: translateX(100%); -ms-transform: translateX(100%); -webkit-transform: translateX(100%); transform: translateX(100%); }
@@ -17,7 +17,7 @@
 #banner .banners .banner:nth-child(9) { -moz-transform: translateX(800%); -ms-transform: translateX(800%); -webkit-transform: translateX(800%); transform: translateX(800%); }
 #banner .banners .banner:nth-child(10) { -moz-transform: translateX(900%); -ms-transform: translateX(900%); -webkit-transform: translateX(900%); transform: translateX(900%); }
 #banner .banners .banner:nth-child(11) { -moz-transform: translateX(1000%); -ms-transform: translateX(1000%); -webkit-transform: translateX(1000%); transform: translateX(1000%); }
-#banner .points { position: absolute; bottom: 10px; left: 0; display: inline-flex; height: 15px; width: 100%; z-index: 3; text-align: center; flex-direction: row; align-items: center; justify-content: center; border: 1px solid rgba(255, 0, 0, 0.3); }
+#banner .points { position: absolute; bottom: 10px; left: 0; display: inline-flex; height: 15px; width: 100%; z-index: 3; text-align: center; flex-direction: row; align-items: center; justify-content: center; }
 #banner .points label { display: inline-block; width: 14px; height: 14px; cursor: pointer; background-color: #bababa; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
 #banner .points label + label { margin-left: 4px; }
 #banner .arrow { position: absolute; top: calc(50% - 60px / 2); z-index: 2; cursor: pointer; display: inline-block; width: 30px; height: 60px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; background-color: rgba(0, 0, 0, 0.4); -moz-transition: background-color 0.3s, opacity 0.3s; -o-transition: background-color 0.3s, opacity 0.3s; -webkit-transition: background-color 0.3s, opacity 0.3s; transition: background-color 0.3s, opacity 0.3s; }
@@ -168,24 +168,13 @@
 #banner[data-index='10'] .banner:nth-child(11) { -moz-transform: translateX(0%); -ms-transform: translateX(0%); -webkit-transform: translateX(0%); transform: translateX(0%); }
 #banner[data-index='10'] .points label:nth-child(11) { background-color: #2e3043; }
 
-.container { display: flex; flex-flow: column wrap; align-content: space-between; /* 容器必须有固定高度 且高度大于最高的列高 */ height: 900px; /* 非必须 */ border-radius: 15px; padding-top: 50px; width: 100%; counter-reset: items; }
-
-.item { width: 32%; /* 非必须 */ position: relative; margin-bottom: 2%; border-radius: 15px; color: #fff; padding: 15px; box-sizing: border-box; overflow: hidden; }
-@media screen and (max-width: 449px) and (min-width: 0) { .item { width: 50%; } }
-.item .infan { display: inline-block; position: absolute; left: 15px; bottom: 10px; text-align: left; }
-.item .infan .infanDay { display: inline-block; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 5px 10px; color: white; font-size: 1.1rem; margin-bottom: 10px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */ background: #f6add9; /* Old browsers */ background: -moz-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
-.item .infan .infantext { display: inline-block; width: 100%; font-size: 1.23rem; color: white; padding-right: 15px; }
-
-/* 仅用于打印数字 */
-/* 将内容块重排为3列 */
-.item:nth-of-type(3n+1) { order: 1; }
-.item:nth-of-type(3n+2) { order: 2; }
-.item:nth-of-type(3n+3) { order: 3; }
-@media screen and (max-width: 449px) and (min-width: 0) { .item:nth-of-type(2n+1) { order: 1; }
-  .item:nth-of-type(2n+2) { order: 2; } }
-
-/* 强制换列 */
-.break { flex-basis: 100%; width: 0; margin: 0; content: ""; padding: 0; }
+.masonry { display: inline-block; width: 100%; padding-top: 50px; }
+.masonry .item { position: relative; display: inline-block; width: calc(100% / 3); padding: 10px; }
+@media screen and (max-width: 449px) and (min-width: 0) { .masonry .item { width: calc(100% / 2); } }
+.masonry .item .content { display: inline-block; width: 100%; height: 100%; position: relative; overflow: hidden; box-shadow: 0 2px 2px rgba(0, 90, 250, 0.05), 0 4px 4px rgba(0, 90, 250, 0.05), 0 8px 8px rgba(0, 90, 250, 0.05), 0 16px 16px rgba(0, 90, 250, 0.05); padding: 15px; color: #fff; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+.masonry .item .content .infan { display: inline-block; position: absolute; left: 15px; bottom: 10px; text-align: left; }
+.masonry .item .content .infan .infanDay { display: inline-block; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; padding: 5px 10px; color: white; font-size: 1.1rem; margin-bottom: 10px; /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6add9+0,88a6fa+100 */ background: #f6add9; /* Old browsers */ background: -moz-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(45deg, #f6add9 0%, #88a6fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6add9', endColorstr='#88a6fa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
+.masonry .item .content .infan .infantext { display: inline-block; width: 100%; font-size: 1.23rem; color: white; padding-right: 15px; }
 
 .m_header_r { display: none; }
 @media screen and (max-width: 1039px) and (min-width: 0) { .m_header_r { display: inline-block; } }
