@@ -9,85 +9,200 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 
 // 首頁Banner
 #banner {
-  overflow: hidden;
-  width: 100%;
-  height: 600px;
+  $max: 10;
   position: relative;
-  float: left;
-  padding-bottom: 10px;
-}
+  overflow: hidden;
 
-#tab > img:not(:first-child) {
-  display: none;
-}
-
-.lunbo_btn {
-  height: 15px;
+  display: inline-block;
   width: 100%;
-  margin: 0px auto;
-  margin-top: -40px;
-  position: absolute;
-  z-index: 3;
-  text-align: center;
 
-  span {
-    width: 14px;
-    height: 14px;
+  padding-bottom: 10px;
+  border: 1px solid rgba(255, 0, 0, .3);
+  
+
+  .banners {
+    position: relative;
+    z-index: 1;
     display: inline-block;
-    background-color: #b4b5b7;
-    border-radius: 50%;
-    margin: 0px 2px;
-    cursor: pointer;
+    width: 100%;
+    height: 600px;
 
-    &.hover {
-      background-color: #ffb23c;
+    .banner {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      display: inline-flex;
+      width: 100%;
+      height: 100%;
+
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      border: 1px solid rgba(255, 0, 0, .3);
+      @include transition(transform .3s);
+      
+      .area1, .area2 {
+        display: inline-block;
+        height: 100%;
+        width: 50%;
+        flex-shrink: 0;
+        border: 1px solid rgba(255, 0, 0, .3);
+      }
+      .area1 {
+        padding-left: 80px;
+      }
+
+      @for $j from 0 through $max {
+        &:nth-child(#{$j + 1}) {
+          @include transform(translateX(($j - 0) * 100%));
+        }
+      }
     }
   }
-}
 
-.arrow {
-  display: none;
-  width: 30px;
-  height: 60px;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  z-index: 999;
+  .points {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
 
-  span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    display: inline-flex;
+    height: 15px;
+    width: 100%;
+
+    z-index: 3;
+    text-align: center;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 0, 0, .3);
+    
+
+    label {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+
+      cursor: pointer;
+      background-color: rgba(186, 186, 186, 1.00);
+      @include border-radius(50%);
+      @include transition(background-color .3s);
+
+      + label {
+        margin-left: 4px;
+      }
+    }
   }
-}
 
-.slider_left {
-  margin: 25px 0 0 10px;
-  transform: rotate(45deg);
-}
+  .arrow {
+    position: absolute;
+    top: calc(50% - 60px / 2);
 
-.prve {
-  left: 0;
-}
+    z-index: 2;
+    cursor: pointer;
+    
+    display: inline-block;
+    width: 30px;
+    height: 60px;
+    @include opacity(0);
 
-.next {
-  right: 0;
-}
+    background-color: rgba(0, 0, 0, 0.4);
+    @include transition(background-color .3s, opacity .3s);
+    
+    &:before {
+      position: absolute;
+      left: calc(50% - 10px / 2);
+      top: calc(50% - 10px / 2);
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-bottom: 2px solid rgba(255, 255, 255, 1);
+      border-left: 2px solid rgba(255, 255, 255, 1);
+    }
 
-.slider_right {
-  margin: 25px 0 0 5px;
-  transform: rotate(-135deg);
-}
+    &.prve {
+      left: 0;
+      &:before {
+        @include rotate(45deg);
+      }
+    }
 
-.arrow:hover {
-  background: #444;
-}
+    &.next {
+      right: 0;
+      &:before {
+        @include rotate(-45deg - 90deg);
+      }
+    }
 
-#banner:hover .arrow {
-  display: block;
+    &:hover {
+      background-color: #444;
+    }
+  }
+
+  &:hover {
+    .arrow {
+      @include opacity(1);
+    }
+  }
+
+  @include range-width(0, 900px) {
+    .banners {
+      // height: auto;
+
+      .banner {
+        flex-direction: column-reverse;
+        // min-height: 600px;
+
+        .area1, .area2 {
+          // min-height: 300px;
+          height: 50%;
+          width: 100%;
+        }
+        .area1 {
+          height: 60%;
+          padding-left: 20px;
+          margin-top: 25px;
+        }
+        .area2 {
+          height: calc(40% - 25px);
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+    .points {
+      bottom: auto;
+      top: calc(40% - 25px);
+    }
+    .arrow {
+      @include opacity(1);
+    }
+  };
+
+  @for $i from 0 through $max {
+    &[data-index='#{$i}'] {
+      @for $j from 0 through $max {
+        .banner {
+          &:nth-child(#{$j + 1}) {
+            @include transform(translateX(($j - $i) * 100%));
+          }
+        }
+        .points {
+          label {
+            @if ($j - $i == 0) {
+              &:nth-child(#{$i + 1}) {
+                background-color: rgba(46, 48, 67, 1.00);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 

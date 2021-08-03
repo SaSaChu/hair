@@ -67,4 +67,39 @@ $(function() {
   $('.tagMenu').eq(0).click();
 
 
+
+  // index banner
+  $('#banner').each(function() {
+    let $that = $(this).attr('data-index', 0)
+    let $banner = $that.find('.banner')
+    let $points = $that.find('.points')
+    let timer = null
+    let total = $banner.length
+
+    $that.setIndex = function(index) {
+      $(this).attr('data-index', index >= 0 ? index < total ? index : 0 : (total - 1));
+      clearInterval(timer)
+      timer = setInterval(_ => $next.click(), 5000) // 5秒
+    }
+
+    // 點點數量, 產生點點
+    for (let i = 0; i < total; i++) {
+      $points.append($('<label />').click(function() {
+        $that.setIndex($(this).index())
+      }))
+    }
+
+    // 左邊箭頭
+    $that.find('.prve').click(function() {
+      $that.setIndex(parseInt($that.attr('data-index'), 10) - 1)
+    })
+
+    // 右邊箭頭
+    let $next = $that.find('.next').click(function() {
+      $that.setIndex(parseInt($that.attr('data-index'), 10) + 1)
+    })
+
+    $that.setIndex(0)
+  })
+
 });
