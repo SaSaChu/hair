@@ -72,6 +72,13 @@ footer {
   }
 }
 
+.bcBoxs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
 
 .titleBoxs {
   width: 100%;
@@ -102,7 +109,7 @@ footer {
 
 
 .allBoxs {
-  display: inline-block;
+  // display: inline-block;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

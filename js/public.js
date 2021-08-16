@@ -15,7 +15,7 @@ $(function() {
 
   // 圖片縮放
   if ($.fn.imgLiquid) {
-    $(".imgSetpBoxs, .imgSerBoxs, .img400 > .content, .img270 > .content, .img335 > .content").imgLiquid ();
+    $(".imgSetpBoxs, .imgService, .imgSerBoxs, .img400 > .content, .img270 > .content, .img335 > .content").imgLiquid ();
   }
   if ($.fn.masonry) {
     $('.masonry').masonry({ itemSelector: '.item' })

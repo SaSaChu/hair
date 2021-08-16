@@ -214,6 +214,12 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
 }
 
 
+.m_pt50 {
+  @include range-width(0, 450px) {
+    padding-top: 50px;
+  }
+}
+
 .m_pD20 {
   @include range-width(0, 450px) {
     padding-bottom: 20px;

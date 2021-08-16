@@ -64,6 +64,8 @@
 
 @media screen and (max-width: 769px) and (min-width: 0) { .m_pD30 { padding-bottom: 30px; } }
 
+@media screen and (max-width: 449px) and (min-width: 0) { .m_pt50 { padding-top: 50px; } }
+
 @media screen and (max-width: 449px) and (min-width: 0) { .m_pD20 { padding-bottom: 20px; } }
 
 @media screen and (max-width: 449px) and (min-width: 0) { .m_pLR15 { padding-left: 15px; padding-right: 15px; } }

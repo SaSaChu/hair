@@ -48,6 +48,11 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
       }
       .area1 {
         padding-left: 80px;
+        padding-top: 130px;
+
+        @include range-width(0, 770px) {
+          padding-top: 45px;
+        }
       }
 
       @for $j from 0 through $max {
@@ -62,6 +67,7 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
     position: absolute;
     bottom: 10px;
     left: 0;
+    padding: 25px 0;
 
     display: inline-flex;
     height: 15px;
@@ -79,6 +85,8 @@ $white50: rgba(255, 255, 255, .5);  // 淺白色50
       display: inline-block;
       width: 14px;
       height: 14px;
+
+      margin: 0 5px;
 
       cursor: pointer;
       background-color: rgba(186, 186, 186, 1.00);

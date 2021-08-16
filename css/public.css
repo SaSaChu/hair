@@ -17,11 +17,13 @@ footer { display: inline-block; width: 100%; background-color: #292a3b; }
 .header_R_Boxs { display: inline-block; float: right; text-align: right; width: 70%; }
 @media screen and (max-width: 449px) and (min-width: 0) { .header_R_Boxs { width: 30%; } }
 
+.bcBoxs { display: flex; justify-content: center; align-items: center; height: 600px; }
+
 .titleBoxs { width: 100%; max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; height: 320px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .titleBoxs { max-width: none; height: 290px; padding: 0 15px; } }
 .titleBoxs.gradual { max-width: none; margin: auto; background: #fcd6ed; /* Old browsers */ background: -moz-linear-gradient(-45deg, #fcd6ed 0%, #c4d1fc 62%, #f0d5ef 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(-45deg, #fcd6ed 0%, #c4d1fc 62%, #f0d5ef 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(135deg, #fcd6ed 0%, #c4d1fc 62%, #f0d5ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd6ed', endColorstr='#f0d5ef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ }
 
-.allBoxs { display: inline-block; width: 100%; max-width: 1200px; margin: 0 auto; *zoom: 1; }
+.allBoxs { width: 100%; max-width: 1200px; margin: 0 auto; *zoom: 1; }
 .allBoxs:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 1209px) and (min-width: 450px) { .allBoxs.minw { padding-left: 15px !important; padding-right: 15px !important; } }
 .allBoxs.sf { padding-top: 50px; margin-top: -450px; }
